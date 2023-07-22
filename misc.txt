@@ -1,0 +1,2 @@
+# Reset the rtlsdr usb device
+usbreset "$(usbreset | grep RTL2838UHIDIR | awk -F ' ' '{print $4}')"
